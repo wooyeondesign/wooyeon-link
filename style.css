@@ -48,6 +48,7 @@ a.box:active,button.box:active{transform:translate(2px,2px);box-shadow:2px 2px 0
 @keyframes bobA{to{transform:translateY(-14px) rotate(6deg)}}
 @keyframes bobB{to{transform:translate(18px,6px)}}
 @keyframes twinkle{50%{transform:scale(.7) rotate(45deg);opacity:.6}}
+@media (max-width:640px){.hero .deco.f1,.hero .deco.f3{display:none}}
 .trial{display:grid;grid-template-columns:auto minmax(0,1fr) auto;align-items:center;gap:22px;padding:22px 24px;background:#ffe45c}
 .free{display:flex;flex-direction:column;align-items:center;justify-content:center;width:104px;height:104px;background:#7a55ff;color:#ffffff;border:2px solid #111014;box-shadow:4px 4px 0 #111014;transform:rotate(-4deg);text-align:center;line-height:1}
 @media (max-width:640px){.trial{grid-template-columns:auto minmax(0,1fr);gap:16px;padding:18px}.trial .tgo{grid-column:1/-1}.free{width:84px;height:84px}}
@@ -153,4 +154,3 @@ a.box:active,button.box:active{transform:translate(2px,2px);box-shadow:2px 2px 0
 
 [hidden]{display:none !important}
 html{scroll-behavior:smooth}
-@media (max-width:640px){.hero .deco.f1,.hero .deco.f3{display:none}}
