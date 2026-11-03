@@ -123,7 +123,10 @@
   } else {
     buddy.classList.add("dock");
     var st = 0;
+    var away = function () { buddy.classList.toggle("away", scrollY <= 520); };
+    away();
     addEventListener("scroll", function () {
+      away();
       if (performance.now() > hold) setPose("run");
       clearTimeout(st); st = setTimeout(function () { if (performance.now() > hold) setPose("stand"); }, 220);
     }, { passive: true });
